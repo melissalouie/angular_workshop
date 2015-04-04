@@ -1,0 +1,5 @@
+<li ng-class="{done: todo.done}" ng-repeat="todo in todoList">{{todo.name}}
+  <button ng-click="todoList.spice($index,1)">Delete</button>
+  <button ng-click="todo.done = !todo.done"><span ng-show="!todo.done">Done</span>
+    <span>Not Done</span>
+</li>
